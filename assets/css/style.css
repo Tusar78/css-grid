@@ -1,0 +1,135 @@
+/* Import "tanor sans" font */
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.container {
+    width: 780px;
+    height: 400px;
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: #c2d8f0;
+    border-radius: 0.4rem;
+
+    /* Grid Container */
+    display: grid;
+
+    /* Explicit Grid */
+    /* grid-template-rows: 50px 100px; */
+    /* grid-template-columns: 50px 100px 150px; */
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    /* grid-template-columns: 3rem 25% 1fr 3fr; */
+
+    /* Grid minmax() */
+    /* grid-template-rows: minmax(100px, auto); */
+    /* grid-template-columns: minmax(100px, 50%) 1fr 3em; */
+
+    /* =-= Grid Repeating =-= */
+    /* grid-template-rows: repeat(2, auto); */
+    /* grid-template-columns: 100px repeat(3, 1fr) 100px; */
+
+    /* Grid Gaps(gutters) */
+    /* grid-row-gap: 1rem; */
+    /* grid-column-gap: 2rem; */
+    /* grid-gap: 4rem; */
+
+    /* Grid Position item by grid line numbers */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 150px); */
+
+    /* Aligning Grid Items */
+    /* grid-template-rows: 80px 80px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-areas: */
+    /* 'content content' */
+    /* 'content content'; */
+    /* justify-items: start; */
+    /* justify-items: center; */
+    /* justify-items: end; */
+    /* justify-items: stretch; */
+    /* align-items: start; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-items: stretch; */
+
+
+
+    /* Gutters */
+    grid-gap: .625rem;
+}
+
+.item {
+    background-color: #4560a7;
+    color: #f2f9ff;
+    padding: 0.625rem;
+    border-radius: 0.4rem;
+}
+
+.item-1 {
+    background-color: #ff9ff3;
+    /* Grid Positioned */
+    /*
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    */
+
+    /* Aligning Grid Items */
+    /* grid-area: content; */
+    justify-self: stretch;
+    align-self: start;
+}
+
+.item-2 {
+    background-color: #feca57;
+    justify-self: center;
+    align-self: center;
+}
+
+.item-3 {
+    background-color: #ff6b6b;
+    justify-self: end;
+    align-self: end;
+}
+
+.item-4 {
+    background-color: #2e86de;
+    /* Grid Positioned */
+    /* grid-area: 3 / 2 / 4 / 3; */
+}
+
+.item-5 {
+    background-color: #1cd1a1;
+}
+
+.item-6 {
+    background-color: #f368d0;
+}
+
+.item-7 {
+    background-color: #ff9f43;
+}
+
+.item-8 {
+    background-color: #ee5353;
+}
+
+.item-9 {
+    background-color: #6f37cd;
+    /* Grid Positioned */
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+p {
+    text-align: justify;
+}
